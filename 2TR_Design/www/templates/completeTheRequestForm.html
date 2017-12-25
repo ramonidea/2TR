@@ -1,0 +1,75 @@
+<ion-view title="Complete the Request Form" id="page14">
+  <ion-content padding="true" class="has-header">
+    <form id="completeTheRequestForm-form6" class="list" ng-show="subject() == 'math'">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider8"> Subject : Math</ion-item>
+      <label class="item item-select" id="completeTheRequestForm-select6">
+        <span class="input-label">For Which Class?</span>
+        <select></select>
+      </label>
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider11"> Type of Tutor</ion-item>
+      <ion-radio id="completeTheRequestForm-radio3">Long Term</ion-radio>
+      <ion-radio id="completeTheRequestForm-radio4">One-time</ion-radio>
+    </form>
+    <form id="completeTheRequestForm-form16" class="list" ng-show="subject()=='humanity'">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider12"> Subject : Humanity</ion-item>
+      <label class="item item-select" id="completeTheRequestForm-select10">
+        <span class="input-label">For Which Class?</span>
+        <select></select>
+      </label>
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider13"> Type of Tutor</ion-item>
+      <ion-radio id="completeTheRequestForm-radio20">Long Term</ion-radio>
+      <ion-radio id="completeTheRequestForm-radio21">One-time</ion-radio>
+    </form>
+    <form id="completeTheRequestForm-form12" class="list" ng-show="subject()=='literature'">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider9"> Subject : Literature</ion-item>
+      <label class="item item-select" id="completeTheRequestForm-select7">
+        <span class="input-label">For Which Class?</span>
+        <select></select>
+      </label>
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider14"> Type of Tutor</ion-item>
+      <ion-radio id="completeTheRequestForm-radio13">Long Term</ion-radio>
+      <ion-radio id="completeTheRequestForm-radio14">One-time</ion-radio>
+    </form>
+    <form id="completeTheRequestForm-form13" class="list" ng-show="subject()=='science'">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider10"> Subject : Science</ion-item>
+      <label class="item item-select" id="completeTheRequestForm-select8">
+        <span class="input-label">For Which Class?</span>
+        <select></select>
+      </label>
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider15"> Type of Tutor</ion-item>
+      <ion-radio id="completeTheRequestForm-radio15">Long Term</ion-radio>
+      <ion-radio id="completeTheRequestForm-radio16">One-time</ion-radio>
+    </form>
+    <form id="completeTheRequestForm-form14" class="list" ng-show="subject()!=null">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider16"> Your Problem or Question</ion-item>
+      <div id="completeTheRequestForm-markdown15" style="text-align:center;" class="show-list-numbers-and-dots">
+        <p style="color:#000000;font-size:15px;">Please Describe your problem or question. You may upload a picture.</p>
+      </div>
+      <div id="completeTheRequestForm-container2"><textarea class="item" style="min-height:20vh;width:90vw;margin-left:2vw "></textarea>
+        <div class="spacer" style="width: 300px; height: 33px;"></div>
+
+    <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+    <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+    <button id="completeTheRequestForm-button37" class="button button-positive  button-block" ng-click="takePicture()">Take A Picture</button>
+
+      </div>
+    </form>
+    <form id="completeTheRequestForm-form17" class="list" ng-show="subject()!=null">
+      <ion-item class="item-divider" id="completeTheRequestForm-list-item-divider17"> Available Periods</ion-item>
+      <ion-checkbox id="completeTheRequestForm-checkbox9" ng-model="POne">1st Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox22" ng-model="PTwo">2nd Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox23" ng-model="PThree">3rd Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox17" ng-model="PFour">4th Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox24" ng-model="PFive">5th Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox21" ng-model="PSix">6th Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox16" ng-model="PSeven">7th Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox25" ng-model="PEight">8th Period</ion-checkbox>
+      <ion-checkbox id="completeTheRequestForm-checkbox26" ng-model="afterschool">After School</ion-checkbox>
+      <div class="spacer" style="width: 300px; height: 57px;"></div>
+      <div style="margin-right:-20px;">
+        <button id="completeTheRequestForm-button35" ng-click="findTutor()" style="left:-10px;" class="button button-positive  button-full">Find your Tutor!</button>
+      </div>
+      <div class="spacer" style="width: 300px; height: 33px;"></div>
+    </form>
+  </ion-content>
+</ion-view>

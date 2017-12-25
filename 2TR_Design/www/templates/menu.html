@@ -1,0 +1,50 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-header-bar class="bar-stable">
+      <div class="title">Menu</div>
+    </ion-header-bar>
+    <ion-content padding="false" class="side-menu-left has-header ">
+      <div class="list card" id="menu-card21">
+        <ion-item class="item-thumbnail-left" id="menu-list-item7" ng-show="ShowTutor">
+          <img src="img/cQrvrY3fTYOzw4ae9RZm_tutor-icon.png">
+          <h2>{{cred().name || "Guest"}}</h2>
+          <p>Status: Available</p>
+        </ion-item>
+        <ion-item class="item-thumbnail-left" id="menu-list-item8" ng-show="ShowUser">
+          <img src="img/4IOfkGhDTO98cnRkQl5A_user-icon.svg">
+          <h2>{{cred().name || "Guest"}}</h2>
+          <p>Grade : {{cred().grade}}</p>
+        </ion-item>
+      </div>
+      <ion-list id="menu-list1">
+        <ion-item class="item-icon-left assertive" id="menu-list-item1" ui-sref="menu.home" menu-close="">
+          <i class="icon ion-home"></i>Home</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item11" ng-click="ViewSessions()">
+          <i class="icon ion-android-list"></i>Tutor Sessions</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item9" ui-sref="menu.pickASubject" menu-close="" ng-click="AddSession()">
+          <i class="icon ion-android-add"></i>Request a tutor</ion-item>
+        <ion-item class="item-divider" id="menu-list-item-divider1"> </ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item24" ui-sref="menu.profileSetting" menu-close="">
+          <i class="icon ion-edit"></i>Account Settings</ion-item>
+        <ion-item class="item-icon-left assertive" id="menu-list-item12" ui-sref="login" menu-close="" ng-show="!cred().login">
+          <i class="icon ion-log-in"></i>Log in</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item23" ui-sref="menu.signUpForTutor" menu-close="">
+            <i class="icon ion-plus"></i>Sign up for Tutor</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item23" ui-sref="welcomeToJoin2TR" menu-close="">
+          <i class="icon ion-person-add"></i>Register a new User</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item10" ng-show="cred().login" ng-click="Logout()">
+          <i class="icon ion-log-out"></i>Log out</ion-item>
+      </ion-list>
+
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

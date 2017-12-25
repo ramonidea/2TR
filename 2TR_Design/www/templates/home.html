@@ -1,0 +1,27 @@
+<ion-view title="Home" cache-view="false" id="page1" style="background-color:#FFFFFF;">
+  <ion-content padding="true" class=" manual-remove-top-padding has-header">
+    <div>
+      <img src="img/RJa28n47SiSaFQjZjbeK_owlexampleforapp.jpg" style="display: block; width: 20%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="home-markdown5" ng-if="announcement" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{announcement}}</p>
+    </div>
+    <div id="home-markdown11" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{name}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 16px;"></div>
+    <a class="button button-royal  button-block icon ion-android-add" ng-click="AddSession()" style="background-color:#30B29C">
+
+      <p>Add a Session</p>
+    </a>
+    <div id="home-button-bar3" class="button-bar">
+      <a class="button button-assertive  button-block icon ion-android-list" ng-click="ViewSessions()" style="background-color:#30B29C">
+        <p>
+          View Sessions
+        </p>
+      </a>
+    </div>
+    <a href="mailto:yiren.qu@lyndoninstitute.org" id="home-button20" style="color:#FFFFFF;" class="button button-positive  button-block icon ion-email e"> Contact Us</a>
+  </ion-content>
+</ion-view>

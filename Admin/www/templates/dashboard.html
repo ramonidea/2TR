@@ -1,0 +1,62 @@
+<ion-view title="Dashboard" id="page2">
+  <ion-content padding="true" class="has-header">
+    <h1 id="dashboard-heading1" style="color:#000000;">Total User:</h1>
+    <div id="dashboard-markdown1" ng-model="info.total_user" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:35px;">{{info.user}}</p>
+    </div>
+    <h1 id="dashboard-heading2" style="color:#000000;">Total Tutor:</h1>
+    <div id="dashboard-markdown3" ng-model="total_tutor" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:35px;">{{info.tutor}}</p>
+    </div>
+    <h1 id="dashboard-heading3" style="color:#000000;">Request:</h1>
+    <div id="dashboard-markdown4" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Today:</p>
+    </div>
+    <div id="dashboard-markdown5" ng-model="info.request_today" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">...</p>
+    </div>
+    <div id="dashboard-markdown6" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Last 7 days:</p>
+    </div>
+    <div id="dashboard-markdown7" ng-model="request_7" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">....</p>
+    </div>
+    <h1 id="dashboard-heading4" style="color:#000000;">Tutor by Subjects:</h1>
+    <div id="dashboard-markdown8" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Math:</p>
+    </div>
+    <div id="dashboard-markdown9" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_m}}</p>
+    </div>
+    <div id="dashboard-markdown10" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Literature:</p>
+    </div>
+    <div id="dashboard-markdown11" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_l}}</p>
+    </div>
+    <div id="dashboard-markdown12" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Science:</p>
+    </div>
+    <div id="dashboard-markdown13" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_s}}</p>
+    </div>
+    <div id="dashboard-markdown14" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Social Studies:</p>
+    </div>
+    <div id="dashboard-markdown15" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_ss}}</p>
+    </div>
+    <div id="dashboard-markdown16" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Language:</p>
+    </div>
+    <div id="dashboard-markdown17" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_lan}}</p>
+    </div>
+    <div id="dashboard-markdown18" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">Other:</p>
+    </div>
+    <div id="dashboard-markdown19" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:25px;">{{info.tutor_o}}</p>
+    </div>
+  </ion-content>
+</ion-view>

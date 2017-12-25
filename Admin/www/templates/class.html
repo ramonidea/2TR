@@ -1,0 +1,53 @@
+<ion-view title="Class" id="page3">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="class-list4">
+      <ion-item class="item-divider" id="class-list-item-divider1"> Math:</ion-item>
+    </ion-list>
+    <div class="item item-body" id="class-list-item-container2">
+      <div id="class-markdown23" ng-repeat="i in info. Math" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">{{i}}</p>
+      </div>
+      <div style="margin-right:-20px;">
+        <button id="class-button3" ng-click="showPopup(&quot;Math&quot;)" style="left:-10px;" class="button button-assertive  button-full">Add</button>
+      </div>
+    </div>
+    <ion-list id="class-list1">
+      <ion-item class="item-divider" id="class-list-item-divider2"> Literature:</ion-item>
+      <div class="item item-body" id="class-list-item-container7">
+        <div id="class-markdown25" ng-repeat="i in info. Literature" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">{{i}}</p>
+        </div>
+        <div style="margin-right:-20px;">
+          <button id="class-button9" ng-click="showPopup(&quot;Literature&quot;)" style="left:-10px;" class="button button-assertive  button-full">Add</button>
+        </div>
+      </div>
+      <ion-item class="item-divider" id="class-list-item-divider3"> Science:</ion-item>
+      <div class="item item-body" id="class-list-item-container6">
+        <div id="class-markdown26" ng-repeat="i in info. Science" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">{{i}}</p>
+        </div>
+        <div style="margin-right:-20px;">
+          <button id="class-button5" ng-click="showPopup(&quot;Science&quot;)" style="left:-10px;" class="button button-assertive  button-full">Add</button>
+        </div>
+      </div>
+      <ion-item class="item-divider" id="class-list-item-divider4"> Social Studies:</ion-item>
+      <div class="item item-body" id="class-list-item-container3">
+        <div id="class-markdown27" ng-repeat="i in info. Humanity" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">{{i}}</p>
+        </div>
+        <div style="margin-right:-20px;">
+          <button id="class-button4" style="left:-10px;" class="button button-assertive  button-full">Add</button>
+        </div>
+      </div>
+      <ion-item class="item-divider" id="class-list-item-divider5"> Language:</ion-item>
+      <div class="item item-body" id="class-list-item-container4">
+        <div id="class-markdown28" ng-repeat="i in info. Language" class="show-list-numbers-and-dots">
+          <p style="color:#000000;">{{i}}</p>
+        </div>
+        <div style="margin-right:-20px;">
+          <button id="class-button6" style="left:-10px;" class="button button-assertive  button-full">Add</button>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

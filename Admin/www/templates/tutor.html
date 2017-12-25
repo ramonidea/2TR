@@ -1,0 +1,8 @@
+<ion-view title="Tutor" id="page4">
+  <ion-content padding="true" class="has-header">
+    <a ui-sref="tabsController.tutorSetting({&quot;tutor&quot;:&quot;&quot;+info.tutor_i+&quot;&quot;,&quot;id&quot;:&quot;&quot;+info.tutor_d+&quot;&quot;})" id="tutor-button8" class="button button-positive  button-block">Setting</a>
+    <ion-list id="tutor-list2">
+      <ion-radio id="tutor-radio1" ng-repeat="i in tutor" ng-click="update($index)" class="item-text-wrap">{{i.name}}</ion-radio>
+    </ion-list>
+  </ion-content>
+</ion-view>

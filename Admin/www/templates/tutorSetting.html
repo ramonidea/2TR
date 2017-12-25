@@ -1,0 +1,36 @@
+<ion-view title="Tutor Setting" id="page5">
+  <ion-content padding="true" class="has-header" overflow-scroll="&quot;true&quot;">
+    <div id="tutorSetting-markdown20" ng-show="!tutor.error" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{tutor.ava}}</p>
+    </div>
+    <div id="tutorSetting-button-bar1" class="button-bar">
+      <button id="tutorSetting-button12" ng-click="check(&quot;Math&quot;)" class="button button-positive  button-block">Math</button>
+      <button id="tutorSetting-button13" ng-click="check(&quot;Literature&quot;)" class="button button-positive  button-block">Lit</button>
+      <button id="tutorSetting-button14" ng-click="check(&quot;Humanity&quot;)" class="button button-positive  button-block">Social</button>
+    </div>
+    <div id="tutorSetting-button-bar2" class="button-bar">
+      <button id="tutorSetting-button15" ng-click="check(&quot;Science&quot;)" class="button button-positive  button-block">Science</button>
+      <button id="tutorSetting-button16" ng-click="check(&quot;Language&quot;)" class="button button-positive  button-block">Language</button>
+    </div>
+    <div id="tutorSetting-markdown21" ng-show="tutor.error" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{tutor.error}}</p>
+    </div>
+    <div class="list card" id="tutorSetting-card22" ng-show="tutor.error==&quot;&quot;">
+      <div id="tutorSetting-markdown34" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Name: {{tutor.name}}</p>
+      </div>
+      <div id="tutorSetting-markdown35" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Subjects:{{tutor.subject}}</p>
+      </div>
+      <div id="tutorSetting-markdown36" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Credentials:{{tutor.credentials}}</p>
+      </div>
+      <form id="tutorSetting-form3" class="list">
+        <ion-checkbox id="tutorSetting-checkbox2" name="selectedSubject[]" ng-repeat="i in tutor.Service" ng-checked="selection.indexOf(i) > -1" ng-click="toggleSelection(i)" class="item-text-wrap">{{i}}</ion-checkbox>
+      </form>
+    </div>
+    <div style="margin-right:-20px;">
+      <button id="tutorSetting-button10" ng-click="save()" ng-disabled="tutor.button" style="left:-10px;" class="button button-assertive  button-full">Save</button>
+    </div>
+  </ion-content>
+</ion-view>

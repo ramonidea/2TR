@@ -1,0 +1,43 @@
+<ion-view title="Find Your Tutor" id="page8">
+  <ion-content padding="true" class="has-header">
+    <div id="findYourTutor-markdown17" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>You are looking for tutor in {{subject}} subject.</strong>
+      </p>
+    </div>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1" delegate-handle="slider1" id="findYourTutor-slider1" style="width:100%;height:65vh;">
+      <ion-slide-page id="findYourTutor-slide27">
+        <div class="list card" id="findYourTutor-card24">
+          <ion-item class="item-icon-left assertive" id="findYourTutor-list-item29">
+            <i class="icon ion-ionic"></i>{{tutorname}}</ion-item>
+          <ion-item class="item-divider" id="findYourTutor-list-item-divider24"> Credentials</ion-item>
+          <div class="item item-body" id="findYourTutor-list-item-container12">
+            <div id="findYourTutor-markdown24" class="show-list-numbers-and-dots">
+              <p style="margin-top:0px;color:#000000;">{{tutor.cred}}</p>
+            </div>
+          </div>
+          <ion-item class="item-divider" id="findYourTutor-list-item-divider25"> Available Time:</ion-item>
+          <ion-item id="findYourTutor-list-item30">{{Tutor.time}}</ion-item>
+          <button id="findYourTutor-button39" class="button button-assertive  button-block">Request !</button>
+        </div>
+      </ion-slide-page>
+      <ion-slide-page id="findYourTutor-slide21">
+        <div class="list card" id="findYourTutor-card23">
+          <ion-item class="item-icon-left assertive" id="findYourTutor-list-item15">
+            <i class="icon ion-ionic"></i>{{tutorname}}</ion-item>
+          <ion-item class="item-divider" id="findYourTutor-list-item-divider22"> Credentials</ion-item>
+          <div class="item item-body" id="findYourTutor-list-item-container11">
+            <div id="findYourTutor-markdown16" class="show-list-numbers-and-dots">
+              <p style="margin-top:0px;color:#000000;">{{tutor.cred}}</p>
+            </div>
+          </div>
+          <ion-item class="item-divider" id="findYourTutor-list-item-divider23"> Available Time:</ion-item>
+          <ion-item id="findYourTutor-list-item16">{{tutor.time}}</ion-item>
+          <button id="findYourTutor-button41" class="button button-assertive  button-block">Request !</button>
+        </div>
+      </ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="width: 300px; height: 41px;"></div>
+    <button id="findYourTutor-button36" class="button button-positive  button-block">If you cannot find a tutor, click Here</button>
+  </ion-content>
+</ion-view>

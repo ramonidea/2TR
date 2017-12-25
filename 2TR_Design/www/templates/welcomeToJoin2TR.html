@@ -1,0 +1,52 @@
+<ion-view title="Welcome to Join 2TR" nav-transition="none" id="page12">
+  <ion-content padding="false" class=" manual-remove-top-padding has-header">
+    <form id="welcomeToJoin2TR-form5" class="list">
+      <div>
+        <img src="img/MRPhnhrmQGHpg4OgUz86_2TR_logo1.png" style="display: block; width: 20%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <ion-list id="welcomeToJoin2TR-list9">
+        <label class="item item-input item-floating-label" id="welcomeToJoin2TR-input9">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Full Name" ng-model="cred.name">
+        </label>
+        <label class="item item-input item-floating-label" id="welcomeToJoin2TR-input10">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="Email" ng-model="cred.email">
+        </label>
+        <label class="item item-input item-floating-label" id="welcomeToJoin2TR-input11">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="cred.password">
+        </label>
+      </ion-list>
+      <div id="welcomeToJoin2TR-markdown9" ng-if="password" class="show-list-numbers-and-dots">
+        <pre>
+          <code> {{password}}</code>
+        </pre>
+      </div>
+      <label class="item item-select" id="welcomeToJoin2TR-select2">
+        <span class="input-label">Grade</span>
+        <select ng-model="cred.grade">
+          <option>Freshman</option>
+          <option>Sophomore</option>
+          <option>Junior</option>
+          <option>Senior</option>
+        </select>
+      </label>
+      <ion-checkbox id="welcomeToJoin2TR-checkbox3" ng-model="cred.ViewUser">Sign up for User</ion-checkbox>
+      <ion-checkbox id="welcomeToJoin2TR-checkbox4" ng-model="cred.ViewTutor">Sign up for Tutor</ion-checkbox>
+      <ion-item class="item-divider" id="welcomeToJoin2TR-list-item-divider4"> Honor Code</ion-item>
+      <div class="item item-body" id="welcomeToJoin2TR-list-item-container2">
+        <div id="welcomeToJoin2TR-markdown10" class="show-list-numbers-and-dots">
+          <pre>
+            <code>The 2TR Tutors team in Lyndon Institute understands the pressures and time constraints school creates. However, the risk you take by violating your school's code of academic integrity is not worth the reward. Copying solutions or requesting
+              unexplained final answers promotes completion without comprehension, which is something we don't support on this site.</code>
+          </pre>
+        </div>
+        <button id="welcomeToJoin2TR-button23" ng-show="(!cred.ViewUser)&amp;&amp;(!cred.ViewTutor)" class="button button-light  button-block"></button>
+        <button id="welcomeToJoin2TR-button22" ng-click="UserSignup()" ng-show="cred.ViewUser &amp;&amp; (!cred.ViewTutor)" ng-disabled="(cred.grade==null)||(cred.name==null)||(cred.password==null)||(cred.email==null)" class="button button-assertive  button-block">Accept and Sign up</button>
+        <a ui-sref="menu.signUpForTutor"  ng-click="TutorSignup()" id="welcomeToJoin2TR-button21" ng-show="cred.ViewTutor" ng-disabled="(cred.grade==null)||(cred.name==null)||(cred.password==null)||(cred.email==null)" class="button button-positive  button-block">Accept and Continue</a>
+        <div class="spacer" style="width: 288px; height: 51px;"></div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

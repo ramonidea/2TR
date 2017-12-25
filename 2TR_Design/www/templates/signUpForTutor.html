@@ -1,0 +1,51 @@
+<ion-view title="Sign up for Tutor" id="page7">
+  <ion-content padding="true" class="has-header">
+    <form id="signUpForTutor-form4" class="list">
+      <ion-list id="signUpForTutor-list8">
+        <ion-item class="item-divider" id="signUpForTutor-list-item-divider6"> Pick at most three tutoring areas</ion-item>
+        <label class="item item-select" id="signUpForTutor-select3">
+          <span class="input-label">First Subject</span>
+          <select ng-model="first"></select>
+        </label>
+        <label class="item item-select" id="signUpForTutor-select4">
+          <span class="input-label">Second Subject (Optional)</span>
+          <select ng-model="second"></select>
+        </label>
+        <label class="item item-select" id="signUpForTutor-select5">
+          <span class="input-label">Third Subject (Optional)</span>
+          <select ng-model="third"></select>
+        </label>
+      </ion-list>
+      <ion-item class="item-divider" id="signUpForTutor-list-item-divider7"> Available Period</ion-item>
+      <ion-checkbox id="signUpForTutor-checkbox15" ng-model="period">1st Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox11" ng-model="period">2nd Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox12" ng-model="period">3rd Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox13" ng-model="period">4th Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox10" ng-model="period">5th Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox8" ng-model="period">6th Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox7" ng-model="period">7th Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox6" ng-model="period">8th Period</ion-checkbox>
+      <ion-checkbox id="signUpForTutor-checkbox14" ng-model="period">After School</ion-checkbox>
+      <div class="item item-body" id="signUpForTutor-list-item-container4">
+        <div id="signUpForTutor-markdown14" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">You may schedule another time with the students.</p>
+        </div>
+      </div>
+      <ion-item class="item-divider" id="signUpForTutor-list-item-divider5"> Tutor Honor Code</ion-item>
+      <div class="item item-body" id="signUpForTutor-list-item-container3">
+        <div id="signUpForTutor-markdown12" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">At 2TR Tutors, we give you great responsibility in handling yourself with students using our service. As current and former students yourselves, we trust that you understand the principles of academic integrity, but would like to remind you
+            that you're required to uphold the following practices:</p>
+
+          <ol>
+            <li>Strictly adhere to the above Chegg Tutors Honor Code in all tutoring interactions.</li>
+            <li>Convey that tutoring is not a replacement for students attending class or doing their homework. </li>
+            <li>The tutor's role is to help students understand concepts and develop effective problem-solving approaches.</li>
+          </ol>
+        </div>
+      </div>
+      <button id="signUpForTutor-button19" ng-disabled="(period==null)||(first==null)" class="button button-assertive  button-block">Sign up</button>
+      <div class="spacer" style="width: 300px; height: 48px;"></div>
+    </form>
+  </ion-content>
+</ion-view>

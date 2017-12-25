@@ -1,0 +1,75 @@
+$assertive: #FFFFFF;
+$energized: #000000;
+$light: #006654;
+$stable: #B23046;
+$calm: #FE91A4;
+$positive: #D85B70;
+$dark: #FFFFFF;
+$balanced: #FFB8C4;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.login_form {
+	background-color: white;
+}
+
+.bk {
+	background-color: #FFA500;
+}
+
+.MainSubjectButton {
+	width: 45vw;
+	height: 35vh;
+	margin-bottom: 1vh;
+	margin-left: 1vw;
+}
+
+.t {
+	background-color: #30B29C;
+	color: #ffffff;
+}
+
+.t2 {
+	background-color: #118C77;
+	color: #FFFFFF;
+}
+
+.e {
+	background-color: #006654;
+	color: #FFFFFF;
+}
+
+.r {
+	background-color: #D85B70;
+	color: #ffffff;
+}
+
+.l {
+	background-color: #54CBFB;
+	color: #ffffff;
+}
+
+.s {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.j {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+body {
+	color: #FFFFFF;
+}
+
+body.platform-ios {
+	font-family: 'Poppins', sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
